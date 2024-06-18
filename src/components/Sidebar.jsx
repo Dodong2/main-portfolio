@@ -8,8 +8,6 @@ import { GiSkills } from "react-icons/gi";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 import { FaSquarePhone } from "react-icons/fa6";
 import { RiStackshareFill } from "react-icons/ri";
-/*---Hooks---*/
-/*---Hooks---*/
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,7 +26,7 @@ const Sidebar = () => {
               </button>
             </header>
             <nav className={isOpen ? "" : "notxt"}>
-              <button ><TbHomeFilled /><span>Home</span></button>
+              <button href='#home'><TbHomeFilled /><span>Home</span></button>
               <button className=""><GiSkills /> <span>Settings</span></button>
               <button><LiaProjectDiagramSolid /> <span>Build</span></button>
               <button><FaSquarePhone /><span>Contact</span></button>

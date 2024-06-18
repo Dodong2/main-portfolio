@@ -1,16 +1,31 @@
+/*---Components---*/
 import Sidebar from "../components/Sidebar"
-
+import Typewriters from "../components/Typewriter"
+import Img1 from '/public/Coding--Streamline-Bruxelles (3).svg'
 
 const Home = () => {
   return (
     <>
+    <section id='home'>
       <Sidebar />
       <div className="main-container">
-        <div className='home'>
-          AHHHHHHHHHHHHHHHHHcccc
-          ccccccccccccccccccccccccccccccccccc
+      <div className="title"><h1>CSA</h1></div>
+        <div className='home-container'>
+        <div className='txt-left'>
+        <div className='box1'>
+        <h1>Hi, I am<br/><span>Carl Arocha</span></h1>
+        <Typewriters/>
+        <button>Greetings</button>
+        </div>
+        </div>
+        <div className='img-right'>
+        <div className='box2'>
+        <img src={Img1}/>
+        </div>
+        </div>
         </div>
       </div>
+      </section>
     </>
   )
 }
