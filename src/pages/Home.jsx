@@ -4,12 +4,12 @@ import Sidebar from "../components/Sidebar"
 const Home = () => {
   return (
     <>
-      <Sidebar/>
+      <Sidebar />
       <div className="main-container">
-      <div className='home'>
-        AHHHHHHHHHHHHHHHHHcccc
-        ccccccccccccccccccccccccccccccccccc
-      </div>
+        <div className='home'>
+          AHHHHHHHHHHHHHHHHHcccc
+          ccccccccccccccccccccccccccccccccccc
+        </div>
       </div>
     </>
   )

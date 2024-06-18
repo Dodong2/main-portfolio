@@ -10,10 +10,12 @@
   --green-hover: #226617;
   --white: #ffffff;
 }
+
 body {
   scroll-behavior: smooth;
   background-color: var(--bg1);
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -27,6 +29,7 @@ body {
 .sidebar-container {
   position: relative;
 }
+
 .sidebar {
   position: fixed;
   overflow: hidden;
@@ -39,20 +42,24 @@ body {
   transition: width 0.4s;
   border: 2px solid var(--white);
 }
+
 .sidebar:hover {
   border: 2px solid var(--green);
   color: var(--green);
   transition: all ease 0.5s;
 }
+
 .sidebar.open {
   width: 260px;
 }
+
 .sidebar .inner {
   position: absolute;
   top: 0;
   left: 0;
   width: 260px;
 }
+
 .sidebar header {
   display: flex;
   align-items: center;
@@ -62,9 +69,11 @@ body {
 .sidebar header button:hover {
   color: var(--white);
 }
+
 .sidebar .btn5 {
   margin-top: 120px;
 }
+
 /* buton menu and close */
 .sidebar-burger {
   display: grid;
@@ -81,6 +90,7 @@ body {
   gap: 20px;
   margin-top: 100px;
 }
+
 .sidebar nav button {
   display: flex;
   gap: 12px;
@@ -96,74 +106,88 @@ body {
   color: var(--color-white);
   border: none;
 }
+
 .sidebar nav button:hover {
   color: var(--white);
   background: var(--green-hover);
   transition: all ease .3s;
 }
 
-.sidebar.open nav > button {
+.sidebar.open nav>button {
   width: 100%;
 }
+
 .notxt span {
   display: none;
 }
 
 /*--------------------(  Home  )--------------------*/
 .home {
-border: 1px solid red;
-color: var(--white);
-text-align: left;
+  border: 1px solid red;
+  color: var(--white);
+  text-align: left;
 }
 
 /*--------------------(  for Mobile  )--------------------*/
-@media only screen and (max-width: 767px) {  
+@media only screen and (max-width: 767px) {
   .main-container {
     width: 200px;
   }
-/*--------------------(  Sidebar  )--------------------*/
-.sidebar {
-  width: 45px;
+
+  /*--------------------(  Sidebar  )--------------------*/
+  .sidebar {
+    width: 45px;
+  }
+
+  .sidebar nav {
+    display: grid;
+    padding: 3px;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .sidebar.open {
+    width: 200px;
+  }
+
+  .sidebar .inner {
+    width: 200px;
+  }
+
+  .sidebar header {
+    padding: 15px 10px;
+  }
+
+  .sidebar .btn5 {
+    margin-top: 100px;
+  }
+
+  .sidebar-burger {
+    font-size: 20px;
+  }
+
+  .sidebar nav button {
+    height: 39px;
+    width: 39px;
+  }
+
+  .sidebar.open nav>button {
+    width: 100%;
+  }
+
+  .notxt span {
+    display: none;
+    text-align: center;
+  }
 }
-.sidebar nav {
-  display: grid;
-  padding: 3px;
-  gap: 20px;
-  margin-top: 50px;
-}
-.sidebar.open {
-  width: 200px;
-}
-.sidebar .inner {
-  width: 200px;
-}
-.sidebar header {
-  padding: 15px 10px;
-}
-.sidebar .btn5 {
-  margin-top: 100px;
-}
-.sidebar-burger {
-  font-size: 20px;
-}
-.sidebar nav button {
-  height: 39px;
-  width: 39px;
-}
-.sidebar.open nav > button {
-  width: 100%;
-}
-.notxt span {
-  display: none;
-  text-align: center;
-}
-}
+
 /*--------------------(  for Laptops  )--------------------*/
 @media only screen and (max-width: 992px) and (max-width: 1199px) {
   .main-container {
     width: 100%;
   }
 }
+
 /*--------------------(  for Desktops  )--------------------*/
 @media only screen and (min-width: 1200px) {
   .main-container {
