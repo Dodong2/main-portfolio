@@ -27,7 +27,7 @@ const Sidebar = () => {
             </header>
             <nav className={isOpen ? "" : "notxt"}>
               <button href='#home'><TbHomeFilled /><span>Home</span></button>
-              <button className=""><GiSkills /> <span>Settings</span></button>
+              <button href='#skill'><GiSkills /> <span>Settings</span></button>
               <button><LiaProjectDiagramSolid /> <span>Build</span></button>
               <button><FaSquarePhone /><span>Contact</span></button>
               <button className="btn5"><RiStackshareFill /><span>Share</span></button>

@@ -1,6 +1,6 @@
 import './App.css'
 import Home from './pages/Home'
-
+import Skill from './pages/Skill'
 function App() {
 
 
@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <Home/>
+    <Skill/>
     </>
   )
 }

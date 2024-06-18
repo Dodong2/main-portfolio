@@ -56,7 +56,7 @@ body {
   color: var(--white);
   transition: width 0.4s;
   border: 2px solid var(--white);
-  z-index: 10;
+  z-index: -1;
 }
 
 .sidebar:hover {
@@ -141,8 +141,9 @@ body {
 .title {
   font-family: "Poppins-ExtraBold";
   margin: 0 20px;
-  color: var(--green);
-
+  color: transparent;
+  -webkit-text-stroke: 1px var(--green);
+  font-size: 1em;
 }
 .home-container {
   display: flex;
@@ -216,12 +217,59 @@ body {
   width: 500px;
 }
 
+ /*--------------------(  Skills  )--------------------*/
+.skill-container {
+  background-color: var(--bg2);
+  padding: 10px;
+}
+.skill-container .title {
+  font-size: 1.5em;
+}
+.skill-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.card1, .card2, .card3 {
+  border: 2px solid var(--green);
+  border-radius: 50px;
+  padding: 20px;
+}
+.card1 img, .card2 img,.card3 img {
+  width: 130px;
+  height: 130px;
+}
+.card-head {
+  display: flex;
+}
+.title-card {
+  border: 1px solid red;
+  position: relative;
+  padding: 50px;
+}
+.title-card div {
+  font-family: "Poppins-Bold";
+  font-size: 1em;
+  background-color: var(--bg2);
+  border: 2px solid var(--green);
+  color: var(--green);
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 /*--------------------(  for Mobile  )--------------------*/
 @media only screen and (max-width: 767px) {
   .main-container {
     width: 200px;
   }
-  /*--------------------(  Home  )--------------------*/
+  /*--------------------( Mobile Home  )--------------------*/
   .home-container {
     align-items: start;
     justify-content: start;
@@ -229,12 +277,8 @@ body {
   }
 
   .txt-left, .img-right {
-    font-family: 'Poppins-Bold';
     padding: 155px;
     position: relative;
-  }
-  .txt-left .box1, .img-right .box2 {
-    position: absolute;
   }
   .txt-left .box1 {
     text-align: center;
@@ -242,7 +286,6 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--white);
     line-height: 1.7em;
     width: 200px;
   }
@@ -260,7 +303,7 @@ body {
   }
   
   
-  /*--------------------(  Sidebar  )--------------------*/
+  /*--------------------( Mobile Sidebar  )--------------------*/
   .sidebar {
     width: 45px;
   }
