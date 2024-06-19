@@ -4,9 +4,9 @@
 }
 
 :root {
-  --bg1: #13181F;
-  --bg2: #141E27;
-  --green: #3EE922;
+  --bg1: #13181f;
+  --bg2: #141e27;
+  --green: #3ee922;
   --green-hover: #226617;
   --white: #ffffff;
 }
@@ -119,44 +119,50 @@ body {
   padding: 0 12px;
   border-radius: 8px;
   background: none;
-  color: var(--color-white);
+  color: var(--white);
   border: none;
 }
 
 .sidebar nav button:hover {
   color: var(--white);
   background: var(--green-hover);
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
-.sidebar.open nav>button {
+.sidebar.open nav > button {
   width: 100%;
 }
 
 .notxt span {
   display: none;
 }
+.menu-phone {
+  display: none;
+  color: var(--white);
+}
 
 /*--------------------(  Home  )--------------------*/
-.title {
+.title h1 {
   font-family: "Poppins-ExtraBold";
-  margin: 0 20px;
+  margin: 0 10px;
   color: transparent;
   -webkit-text-stroke: 1px var(--green);
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .home-container {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
 }
-.txt-left, .img-right {
-  font-family: 'Poppins-Bold';
+.txt-left,
+.img-right {
+  font-family: "Poppins-Bold";
   padding: 290px;
   position: relative;
 }
-.txt-left .box1, .img-right .box2 {
+.txt-left .box1,
+.img-right .box2 {
   position: absolute;
 }
 .txt-left .box1 {
@@ -175,7 +181,7 @@ body {
   border-radius: 50px;
   background-color: var(--bg1);
   color: var(--white);
-  font-family: 'Poppins-Bold';
+  font-family: "Poppins-Bold";
   font-size: 1em;
   width: 150px;
   height: 50px;
@@ -206,7 +212,7 @@ body {
   border: none;
 }
 .box1 button:active {
-  transform: scale(0.70);
+  transform: scale(0.95);
 }
 
 .img-right .box2 {
@@ -217,12 +223,12 @@ body {
   width: 500px;
 }
 
- /*--------------------(  Skills  )--------------------*/
+/*--------------------(  Skills  )--------------------*/
 .skill-container {
   background-color: var(--bg2);
   padding: 10px;
 }
-.skill-container .title {
+.skill-container .title h1 {
   font-size: 1.5em;
 }
 .skill-card {
@@ -232,7 +238,9 @@ body {
   flex-wrap: wrap;
   padding: 50px;
 }
-.card1, .card2, .card3 {
+.card1,
+.card2,
+.card3 {
   border: 2px solid var(--white);
   border-radius: 30px;
   padding: 0px 30px 40px 10px;
@@ -243,17 +251,23 @@ body {
   transition: filter 300ms;
   background-color: var(--bg2);
 }
-.card1:hover, .card2:hover, .card3:hover {
+.card1:hover,
+.card2:hover,
+.card3:hover {
   border: 2px solid var(--green);
   color: var(--green);
   background-color: var(--bg1);
   filter: drop-shadow(0 0 2em var(--green));
 }
-.card1 img, .card2 img,.card3 img {
+.card1 img,
+.card2 img,
+.card3 img {
   width: 130px;
   height: 130px;
 }
-.card1 ul li, .card2 ul li, .card3 ul li {
+.card1 ul li,
+.card2 ul li,
+.card3 ul li {
   font-family: "Poppins-light";
   font-weight: 300;
   margin-left: 20px;
@@ -287,7 +301,8 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.mini-card1, .mini-card2 {
+.mini-card1,
+.mini-card2 {
   border: 2px solid var(--white);
   border-radius: 30px;
   padding: 20px;
@@ -297,17 +312,21 @@ body {
   will-change: filter;
   transition: filter 300ms;
 }
-.mini-card1 img, .mini-card2 img {
+.mini-card1 img,
+.mini-card2 img {
   width: 50px;
 }
-.mini-card1 h1, .mini-card2 h1 {
+.mini-card1 h1,
+.mini-card2 h1 {
   font-family: "Poppins-Bold";
 }
-.mini-card1 p, .mini-card2 p {
+.mini-card1 p,
+.mini-card2 p {
   font-family: "Poppins-light";
-  font-size: .8em;
+  font-size: 0.8em;
 }
-.mini-card1:hover, .mini-card2:hover {
+.mini-card1:hover,
+.mini-card2:hover {
   border: 2px solid var(--green);
   color: var(--green);
   background-color: var(--bg1);
@@ -321,12 +340,18 @@ body {
   }
   /*--------------------( Mobile Home  )--------------------*/
   .home-container {
-    align-items: start;
-    justify-content: start;
     flex-direction: column;
   }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+    z-index: 1;
+  }
 
-  .txt-left, .img-right {
+  .txt-left,
+  .img-right {
     padding: 155px;
     position: relative;
   }
@@ -340,75 +365,58 @@ body {
     width: 200px;
   }
   .mess {
-    font-size: .6em;
+    font-size: 0.6em;
   }
-  
+
   .img-right .box2 {
-    top: 50%;
+    top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .box2 img {
     width: 300px;
   }
-   /*--------------------(  Mobile Skills  )--------------------*/
-   .skill-card {
-    align-items: start;
-    justify-content: start;
-    padding: 30px;
+  /*--------------------(  Mobile Skills  )--------------------*/
+  .skill-card {
     gap: 50px;
-   }
-   .mini-card {
-    align-items: start;
-    justify-content: start;
-    padding: 20px;
-    gap: 20px;
   }
-  
-  /*--------------------( Mobile Sidebar  )--------------------*/
-  .sidebar {
-    width: 45px;
+  .mini-card {
+    gap: 20px;
   }
 
-  .sidebar nav {
-    display: grid;
-    padding: 3px;
-    gap: 20px;
-    margin-top: 50px;
+  /*--------------------( Mobile Sidebar  )--------------------*/
+  .sidebar {
+    right: 0;
+    width: 0px;
+    height: 99%;
   }
 
   .sidebar.open {
-    width: 200px;
+    width: 55px;
   }
 
   .sidebar .inner {
-    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
   }
 
-  .sidebar header {
-    padding: 15px 10px;
+  .sidebar header button:hover {
+    color: var(--white);
   }
 
   .sidebar .btn5 {
-    margin-top: 100px;
+    margin-top: 0px;
   }
-
-  .sidebar-burger {
-    font-size: 20px;
+  .sidebar nav {
+    margin-top: 10px;
   }
-
-  .sidebar nav button {
-    height: 39px;
-    width: 39px;
-  }
-
-  .sidebar.open nav>button {
-    width: 100%;
-  }
-
-  .notxt span {
+  .txt span {
     display: none;
-    text-align: center;
+  }
+  .menu-phone {
+    display: block;
   }
 }
 

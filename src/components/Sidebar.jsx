@@ -14,6 +14,15 @@ const Sidebar = () => {
   return (
     <>
       <div className='sidebar-container'>
+        <div className='menu-phone'>
+          <button
+            type="button"
+            className="sidebar-burger"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span className="icon">{isOpen ? <IoClose /> : <RiMenu4Fill />}</span>
+          </button>
+        </div>
         <aside className={`sidebar ${isOpen ? "open" : ""}`}>
           <div className="inner">
             <header>
@@ -25,8 +34,8 @@ const Sidebar = () => {
                 <span className="icon">{isOpen ? <IoClose /> : <RiMenu4Fill />}</span>
               </button>
             </header>
-            <nav className={isOpen ? "" : "notxt"}>
-              <button href='#home'><TbHomeFilled /><span>Home</span></button>
+            <nav className={isOpen ? "txt" : "notxt"}>
+              <button><TbHomeFilled /><span>Home</span></button>
               <button href='#skill'><GiSkills /> <span>Settings</span></button>
               <button><LiaProjectDiagramSolid /> <span>Build</span></button>
               <button><FaSquarePhone /><span>Contact</span></button>

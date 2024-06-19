@@ -7,9 +7,8 @@ const Home = () => {
   return (
     <>
       <section id='home'>
-        <Sidebar />
         <div className="main-container">
-          <div className="title"><h1>CSA</h1></div>
+          <div className="title"><h1>CSA</h1><Sidebar /></div>
           <div className='home-container'>
             <div className='txt-left'>
               <div className='box1'>

@@ -13,7 +13,7 @@ const Skill = () => {
                 <div className='main-container'>
                     {/*----------SKILL CONTAINER----------*/}
                     <div className='skill-container'>
-                        <div className='title'>SKILLS</div>
+                        <div className='title'><h1>SKILLS</h1></div>
                         {/*----------SKILL CARD----------*/}
                         <div className='skill-card'>
                             {/*----------CARD 1----------*/}
