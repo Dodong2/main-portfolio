@@ -1,4 +1,5 @@
 /*---Hooks---*/
+import { HashLink as Link } from 'react-router-hash-link';
 import { useState } from "react";
 /*---Icons---*/
 import { RiMenu4Fill } from "react-icons/ri";
@@ -35,11 +36,11 @@ const Sidebar = () => {
               </button>
             </header>
             <nav className={isOpen ? "txt" : "notxt"}>
-              <button><TbHomeFilled /><span>Home</span></button>
-              <button href='#skill'><GiSkills /> <span>Settings</span></button>
-              <button><LiaProjectDiagramSolid /> <span>Build</span></button>
-              <button><FaSquarePhone /><span>Contact</span></button>
-              <button className="btn5"><RiStackshareFill /><span>Share</span></button>
+              <Link to='#home' className='btn' smooth><button><TbHomeFilled /><span>Home</span></button></Link>
+              <Link to='#skill' className='btn' smooth><button><GiSkills /> <span>Skills</span></button></Link>
+              <Link to='#project' className='btn' smooth><button><LiaProjectDiagramSolid /> <span>Build</span></button></Link>
+              <Link to='#contact' className='btn' smooth><button><FaSquarePhone /><span>Contact</span></button></Link>
+              <Link to='#share' className='btn' smooth><button><RiStackshareFill /><span>Share</span></button></Link>
             </nav>
           </div>
         </aside>
