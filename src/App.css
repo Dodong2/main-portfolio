@@ -56,7 +56,7 @@ body {
   color: var(--white);
   transition: width 0.4s;
   border: 2px solid var(--white);
-  z-index: -1;
+  z-index: 1;
 }
 
 .sidebar:hover {
@@ -181,7 +181,6 @@ body {
   height: 50px;
   letter-spacing: 2px;
   margin-top: 10px;
-  transition: all ease 0.3s;
 }
 
 .box1 button::before {
@@ -200,6 +199,7 @@ body {
 .box1 button:hover {
   border: 2px solid var(--green);
   color: var(--green);
+  filter: drop-shadow(0 0 2em var(--green));
 }
 
 .box1 button:hover::before {
@@ -228,25 +228,43 @@ body {
 .skill-card {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 .card1, .card2, .card3 {
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  padding: 0px 30px 40px 10px;
+  max-width: 200px;
+  width: 100%;
+  color: var(--white);
+  will-change: filter;
+  transition: filter 300ms;
+  background-color: var(--bg2);
+}
+.card1:hover, .card2:hover, .card3:hover {
   border: 2px solid var(--green);
-  border-radius: 50px;
-  padding: 20px;
+  color: var(--green);
+  background-color: var(--bg1);
+  filter: drop-shadow(0 0 2em var(--green));
 }
 .card1 img, .card2 img,.card3 img {
   width: 130px;
   height: 130px;
 }
+.card1 ul li, .card2 ul li, .card3 ul li {
+  font-family: "Poppins-light";
+  font-weight: 300;
+  margin-left: 20px;
+}
 .card-head {
   display: flex;
 }
 .title-card {
-  border: 1px solid red;
   position: relative;
-  padding: 50px;
+  padding: 40px;
+  z-index: -1;
 }
 .title-card div {
   font-family: "Poppins-Bold";
@@ -258,10 +276,42 @@ body {
   width: 100px;
   text-align: center;
   position: absolute;
-  top: -15%;
+  top: -1%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+.mini-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.mini-card1, .mini-card2 {
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  padding: 20px;
+  max-width: 220px;
+  width: 100%;
+  color: var(--white);
+  will-change: filter;
+  transition: filter 300ms;
+}
+.mini-card1 img, .mini-card2 img {
+  width: 50px;
+}
+.mini-card1 h1, .mini-card2 h1 {
+  font-family: "Poppins-Bold";
+}
+.mini-card1 p, .mini-card2 p {
+  font-family: "Poppins-light";
+  font-size: .8em;
+}
+.mini-card1:hover, .mini-card2:hover {
+  border: 2px solid var(--green);
+  color: var(--green);
+  background-color: var(--bg1);
+  filter: drop-shadow(0 0 2em var(--green));
 }
 
 /*--------------------(  for Mobile  )--------------------*/
@@ -301,7 +351,19 @@ body {
   .box2 img {
     width: 300px;
   }
-  
+   /*--------------------(  Mobile Skills  )--------------------*/
+   .skill-card {
+    align-items: start;
+    justify-content: start;
+    padding: 30px;
+    gap: 50px;
+   }
+   .mini-card {
+    align-items: start;
+    justify-content: start;
+    padding: 20px;
+    gap: 20px;
+  }
   
   /*--------------------( Mobile Sidebar  )--------------------*/
   .sidebar {
