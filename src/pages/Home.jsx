@@ -1,6 +1,7 @@
 /*---Components---*/
 import Sidebar from "../components/Sidebar"
 import Typewriters from "../components/Typewriter"
+/*---Images---*/
 import Img1 from '/public/img1.svg'
 
 const Home = () => {

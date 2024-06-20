@@ -1,3 +1,4 @@
+/*---Images---*/
 import Img2 from '/public/img2.svg'
 import Img3 from '/public/img3.svg'
 import Img4 from '/public/img4.svg'

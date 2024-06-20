@@ -2,6 +2,7 @@ import './App.css'
 import Home from './pages/Home'
 import Skill from './pages/Skill'
 import { HashRouter as Router } from 'react-router-dom'
+import Project from './pages/Project'
 function App() {
 
 
@@ -11,6 +12,7 @@ function App() {
     <Router>
     <Home/>
     <Skill/>
+    <Project/>
     </Router>
     </>
   )
