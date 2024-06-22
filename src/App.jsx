@@ -1,19 +1,24 @@
+import { lazy, Suspense } from 'react'
 import './App.css'
-import Home from './pages/Home'
-import Skill from './pages/Skill'
 import { HashRouter as Router } from 'react-router-dom'
-import Project from './pages/Project'
+
+const Home = lazy(() => import('./pages/Home.jsx'))
+const Project = lazy(() => import('./pages/Project.jsx'))
+const Skill = lazy(() => import('./pages/Skill.jsx'))
+const Contact = lazy (() => import('./pages/Contact.jsx'))
+
 function App() {
-
-
 
   return (
     <>
-    <Router>
-    <Home/>
-    <Skill/>
-    <Project/>
-    </Router>
+      <Router>
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <Home />
+          <Skill />
+          <Project />
+          <Contact/>
+        </Suspense>
+      </Router>
     </>
   )
 }

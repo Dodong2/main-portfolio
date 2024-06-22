@@ -52,7 +52,7 @@ const Project = () => {
                                     into the website and hosted it.
                                 </p>
                             </div>
-                        </div>
+                        </div><hr/>
                         {/*----------PROJECT LAYER3----------*/}
                         <div className="project-layer3">
                             <div className="project-img">
@@ -74,7 +74,7 @@ const Project = () => {
                                     using PHP and MySQL, and hosted it on InfinityFree.
                                 </p>
                             </div>
-                        </div>
+                        </div><hr/>
                         {/*----------PROJECT LAYER2----------*/}
                         <div className="project-layer2">
                             <div className="project-img">
@@ -96,7 +96,7 @@ const Project = () => {
                                     the website design while I coded its UI and deployed it.
                                 </p>
                             </div>
-                        </div>
+                        </div><hr/>
                         {/*----------PROJECT LAYER3----------*/}
                         <div className="project-layer3">
                             <div className="project-img">
@@ -119,7 +119,7 @@ const Project = () => {
                                     (API).
                                 </p>
                             </div>
-                        </div>
+                        </div><hr/>
                         {/*----------PROJECT LAYER2----------*/}
                         <div className="project-layer2">
                             <div className="project-img">
@@ -141,6 +141,7 @@ const Project = () => {
                                 </p>
                             </div>
                         </div>
+                        <hr/>
                     </div>
                 </div>
             </section>
