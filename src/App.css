@@ -33,6 +33,10 @@
 body {
   background-color: var(--bg1);
 }
+/* for modal */
+body.active-modal {
+  overflow-y: hidden;
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -257,6 +261,42 @@ body {
 
 .box2 img {
   width: 500px;
+}
+
+/*--------------------(  Modal 1  )--------------------*/
+.modal1 {
+  display: none;
+}
+.overlay1, .modal1 {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10;
+}
+.modal-content1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: var(--white);
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  z-index: 20;
+}
+
+.overlay1 {
+  background: rgba(0, 0, 0, 0.582);
+}
+
+.setopen {
+  display: block;
 }
 
 /*--------------------(  Skills  )--------------------*/
@@ -667,7 +707,6 @@ body {
   color: var(--green);
   position: relative;
 }
-
 
 
 
