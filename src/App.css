@@ -879,10 +879,21 @@ body.active-modal {
 .modal2-footer button {
   border-radius: 10px;
   border: 2px solid var(--white);
+  color: var(--white);
   padding: 10px;
   width: 130px;
   font-size: 1em;
   font-family: "Poppins-Bold";
+  transition: all ease-in .2s;
+  will-change: filter;
+}
+.modal2-footer button:hover {
+  border: 2px solid var(--green);
+  filter: drop-shadow(0 0 2em var(--green));
+  color: var(--green);
+}
+.modal2-footer button:active {
+  transform: scale(0.95);
 }
 .modal2-footer span {
   font-size: 2em;
