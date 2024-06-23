@@ -264,11 +264,11 @@ body.active-modal {
 }
 
 /*--------------------(  Modal 1  )--------------------*/
-.modal1 {
+.modal1, .modal2 {
   display: none;
   position: relative;
 }
-.overlay1, .modal1 {
+.overlay1, .modal1, .modal2 {
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -278,7 +278,7 @@ body.active-modal {
   position: fixed;
   z-index: 10;
 }
-.modal-content1 {
+.modal-content1, .modal-content2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -741,8 +741,153 @@ body.active-modal {
   color: var(--green);
   position: relative;
 }
+/*--------------------(  Modal 2  )--------------------*/
+.modal2 {
+  display: none;
+  position: relative;
+}
+.overlay1, .modal2 {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10;
+}
+.modal-content2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: var(--bg2);
+  border: 2px solid var(--green);
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 400px;
+  min-width: 300px;
+  z-index: 20;
+  text-align: right;
+}
+
+.overlay1 {
+  background: rgba(0, 0, 0, 0.582);
+}
+
+.setopen {
+  display: block;
+}
+.input-box form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 20px;
+}
+
+.modal-content2 button {
+  background-color: var(--bg2);
+  border: none;
+  font-size: 2em;
+  color: var(--green);
+}
 
 
+.input-box .input1, .input-box .input2, .input-box .input3 {
+  padding: 15px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+  width: 100%;
+  font-size: 16px;
+  font-family: "Poppins-Light";
+  color: var(--white);
+  position: relative;
+}
+
+.input-box form .span1, .input-box form .span2, .input-box form .span3 {
+  transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+  background-color: transparent;
+  color: var(--green);
+  padding: 0 5px;
+  pointer-events: none;
+  font-family: "Poppins-Bold";
+}
+
+/* Span 1 */
+.input-box .span1 {
+  position: absolute;
+  top: 7%;
+  left: 20px;
+  transform: translateY(-30%);
+}
+
+.input-box .input1:focus ~ .span1, 
+.input-box .input1:valid ~ .span1 {
+  transform: translateX(0) translateY(-35px);
+  background-color: var(--bg2);
+  color: var(--green);
+  font-family: "Poppins-Bold";
+  font-size: 1em;
+}
+
+/* span 2 */
+.input-box .span2 {
+  position: absolute;
+  top: 27%;
+  left: 20px;
+  transform: translateY(-30%);
+
+}
+
+.input-box .input2:focus ~ .span2, 
+.input-box .input2:valid ~ .span2 {
+  transform: translateX(0) translateY(-35px);
+  background-color: var(--bg2);
+  color: var(--green);
+  font-family: "Poppins-Bold";
+  font-size: 1em;
+}
+
+/* span 3 */
+.input-box .span3 {
+  position: absolute;
+  top: 46%;
+  left: 20px;
+  transform: translateY(-30%);
+}
+
+.input-box .input3:focus ~ .span3, 
+.input-box .input3:valid ~ .span3 {
+  transform: translateX(0) translateY(-30px);
+  background-color: var(--bg2);
+  color: var(--green);
+  font-family: "Poppins-Bold";
+  font-size: 1em;
+}
+.modal2-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 220px;
+}
+.modal2-footer button {
+  border-radius: 10px;
+  border: 2px solid var(--white);
+  padding: 10px;
+  width: 130px;
+  font-size: 1em;
+  font-family: "Poppins-Bold";
+}
+.modal2-footer span {
+  font-size: 2em;
+  color: var(--green);
+}
 
 /*--------------------(  for Mobile  )--------------------*/
 @media only screen and (max-width: 767px) {
@@ -940,7 +1085,7 @@ body.active-modal {
     border: 1x solid red;
   }
 
-  /*--------------------(  Modal 1  )--------------------*/
+  /*--------------------(  Mobile Modal 1  )--------------------*/
 .modal-content1 {
   min-width: 220px;
 }
@@ -960,6 +1105,96 @@ body.active-modal {
   right: -10%;
   width: 80px;
 }
+
+  /*--------------------(  Mobile Modal 2  )--------------------*/
+  .modal-content2 {
+    padding: 15px;
+    max-width: 120px;
+    min-width: 260px;
+  }
+  
+  .input-box form {
+    gap: 20px;
+  }
+  
+  .input-box .input1, .input-box .input2, .input-box .input3 {
+    padding: 10px;
+  }
+  
+  .input-box form .span1, .input-box form .span2, .input-box form .span3 {
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+    background-color: transparent;
+    color: var(--green);
+    padding: 0 5px;
+    pointer-events: none;
+    font-family: "Poppins-Bold";
+    font-size: .8em;
+  }
+  
+  /* Span 1 */
+  .input-box .span1 {
+    position: absolute;
+    top: 6%;
+    left: 20px;
+    transform: translateY(-30%);
+  }
+  
+  .input-box .input1:focus ~ .span1, 
+  .input-box .input1:valid ~ .span1 {
+    transform: translateX(0) translateY(-29px);
+    font-size: .8em;
+  }
+  
+  /* span 2 */
+  .input-box .span2 {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    transform: translateY(-30%);
+  
+  }
+  
+  .input-box .input2:focus ~ .span2, 
+  .input-box .input2:valid ~ .span2 {
+    transform: translateX(0) translateY(-29px);
+    font-size: .8em;
+  }
+  
+  /* span 3 */
+  .input-box .span3 {
+    position: absolute;
+    top: 44%;
+    left: 20px;
+    transform: translateY(-30%);
+  }
+  
+  .input-box .input3:focus ~ .span3, 
+  .input-box .input3:valid ~ .span3 {
+    transform: translateX(0) translateY(-28px);
+    font-size: .8em;
+  }
+  .modal2-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .modal2-footer button {
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    padding: 10px;
+    width: 130px;
+    font-size: 1em;
+    font-family: "Poppins-Bold";
+  }
+  .modal2-footer span {
+    font-size: 1.5em;
+    color: var(--green);
+  }
+  
+
+
+
 }
 
 

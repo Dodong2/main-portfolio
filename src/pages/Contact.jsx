@@ -8,8 +8,23 @@ import { FaTwitter } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 /*---Hooks---*/
 import { HashLink as Link } from "react-router-hash-link";
+import { useState } from 'react';
+/*---Pages---*/
+import Modal2 from '../components/Modal2'
+
+
 const Contact = () => {
-    return (
+
+const [ isModal2, setModal2] = useState(false)
+
+if(isModal2) {
+    document.body.classList.add('active-modal')
+} else {
+    document.body.classList.remove('active-modal')
+}
+
+
+return (
         <>
             <section id='contact'>
                 <div className="main-container">
@@ -23,7 +38,7 @@ const Contact = () => {
                             <h2>Tell me about your projects.</h2>
                             <p>I am open to <span>collaborations</span> and <span>freelance</span> work. </p>
                             <div className='mess-container'>
-                            <button>Message now <span><GrSend /></span></button>
+                            <button onClick={() => setModal2(!isModal2)}>Message now <span><GrSend /></span></button>
                             </div>
                             <div className='contact-lists'>
                                <Link to=''><FaFacebook /></Link>
@@ -33,6 +48,10 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className={`modal2 ${isModal2 ? 'setopen' : ''}`}>
+                <div className='overlay1' onClick={() => setModal2(!isModal2)}></div>
+                <Modal2 setModal2={setModal2}/>
                 </div>
             </section>
         </>
