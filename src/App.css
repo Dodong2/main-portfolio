@@ -900,6 +900,11 @@ body.active-modal {
   color: var(--green);
 }
 
+.message {
+  font-family: "Poppins-Bold";
+  color: var(--green);
+}
+
 /*--------------------(  for Mobile  )--------------------*/
 @media only screen and (max-width: 767px) {
   .main-container {
@@ -1202,8 +1207,6 @@ body.active-modal {
     font-size: 1.5em;
     color: var(--green);
   }
-  
-
 
 
 }
