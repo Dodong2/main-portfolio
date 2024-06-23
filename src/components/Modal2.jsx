@@ -27,7 +27,7 @@ const Modal2 = () => {
             })
             .then(
                 () => {
-                    setMessage("SUCCESS!");
+                    setMessage("Sent Successfully!");
                     e.target.reset();
                 },
                 (error) => {

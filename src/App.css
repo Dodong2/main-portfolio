@@ -741,6 +741,14 @@ body.active-modal {
   color: var(--green);
   position: relative;
 }
+.contact-lists a {
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.contact-lists a:hover {
+  filter: drop-shadow(0 0 2em var(--green));
+}
 /*--------------------(  Modal 2  )--------------------*/
 .modal2 {
   display: none;

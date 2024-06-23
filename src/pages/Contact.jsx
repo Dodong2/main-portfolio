@@ -41,9 +41,9 @@ return (
                             <button onClick={() => setModal2(!isModal2)}>Message now <span><GrSend /></span></button>
                             </div>
                             <div className='contact-lists'>
-                               <Link to=''><FaFacebook /></Link>
-                               <Link to=''><FaLinkedin /></Link>
-                               <Link to=''><FaTwitter /></Link>
+                               <Link to='https://web.facebook.com/karu.sutibunhama.3'><FaFacebook /></Link>
+                               <Link to='https://www.linkedin.com/in/arocha-carl-stephen-b3392b2b3/'><FaLinkedin /></Link>
+                               <Link to='https://x.com/chatdog0403?t=oSsC-VZdm5EGezzmXsVVWw&s=09'><FaTwitter /></Link>
                                <Link to=''><FaPhone /></Link>
                             </div>
                         </div>

@@ -12,6 +12,19 @@ import { RiStackshareFill } from "react-icons/ri";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  /* ---------- para ma copy yung link ng site---------- */
+  const copyLinkToClipboard = () => {
+    const currentURL = window.location.href;
+    navigator.clipboard.writeText(currentURL)
+      .then(() => {
+        alert('Link copied to clipboard!, thank you for sharing.');
+      })
+      .catch((error) => {
+        console.error('Failed to copy link: ', error);
+      });
+  };
+
   return (
     <>
       <div className='sidebar-container'>
@@ -40,7 +53,7 @@ const Sidebar = () => {
               <Link to='#skill' className='btn' smooth><button><GiSkills /> <span>Skills</span></button></Link>
               <Link to='#project' className='btn' smooth><button><LiaProjectDiagramSolid /> <span>Build</span></button></Link>
               <Link to='#contact' className='btn' smooth><button><FaSquarePhone /><span>Contact</span></button></Link>
-              <Link to='#share' className='btn' smooth><button><RiStackshareFill /><span>Share</span></button></Link>
+              <Link to='#share' className='btn' smooth><button onClick={copyLinkToClipboard}><RiStackshareFill /><span>Share</span></button></Link>
             </nav>
           </div>
         </aside>
