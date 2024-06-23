@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar"
 import Typewriters from "../components/Typewriter"
 import Modal1 from '../components/Modal1'
 /*---Images---*/
-import Img1 from '/public/img1.svg'
+import Img1 from '/img1.svg'
 
 
 const Home = () => {

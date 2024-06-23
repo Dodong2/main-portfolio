@@ -266,6 +266,7 @@ body.active-modal {
 /*--------------------(  Modal 1  )--------------------*/
 .modal1 {
   display: none;
+  position: relative;
 }
 .overlay1, .modal1 {
   width: 100vw;
@@ -279,14 +280,15 @@ body.active-modal {
 }
 .modal-content1 {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
-  background-color: var(--white);
+  background-color: var(--bg2);
+  border: 2px solid var(--green);
   padding: 14px 28px;
   border-radius: 3px;
-  max-width: 600px;
+  max-width: 400px;
   min-width: 300px;
   z-index: 20;
 }
@@ -298,7 +300,39 @@ body.active-modal {
 .setopen {
   display: block;
 }
+.modal-content1 p {
+  font-family: "Poppins-Light";
+  font-size: 1em;
+  color: var(--white);
+  text-align: justify;
+}
+.modal1-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal1-header button {
+  background-color: var(--bg2);
+  border: none;
+  font-size: 2em;
+  color: var(--green);
+}
+.modal1-header img {
+  width: 50px;
+}
+.modal1-footer {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 25px;
+  position: relative;
+}
 
+.modal1-footer img {
+  position: absolute;
+  top: -70%;
+  width: 110px;
+}
 /*--------------------(  Skills  )--------------------*/
 .skill-container {
   background-color: var(--bg2);
@@ -904,6 +938,27 @@ body.active-modal {
     width: 0;
     border: 1x solid red;
   }
+
+  /*--------------------(  Modal 1  )--------------------*/
+.modal-content1 {
+  min-width: 220px;
+}
+.modal-content1 p {
+  font-size: .8em;
+}
+.modal1-header button {
+  font-size: 1.5em;
+}
+.modal1-header img {
+  width: 30px;
+}
+
+.modal1-footer img {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 80px;
+}
 }
 
 

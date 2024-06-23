@@ -1,10 +1,10 @@
 /*---Images---*/
-import Img7 from "/public/img7.svg";
-import Appcon from "/public/appcon.png";
-import Todo from "/public/php crud.png";
-import Cat from "/public/catfact.png";
-import Bao from "/public/bao.png";
-import Port from "/public/port design.png";
+import Img7 from "/img7.svg";
+import Appcon from "/appcon.png";
+import Todo from "/php crud.png";
+import Cat from "/catfact.png";
+import Bao from "/bao.png";
+import Port from "/port design.png";
 
 import { HashLink as Link } from "react-router-hash-link";
 

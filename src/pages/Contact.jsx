@@ -1,5 +1,5 @@
 /*---Images---*/
-import Img8 from '/public/img8.svg'
+import Img8 from '/img8.svg'
 /*---Icons---*/
 import { GrSend } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa6";

@@ -1,9 +1,9 @@
 /*---Images---*/
-import Img2 from '/public/img2.svg'
-import Img3 from '/public/img3.svg'
-import Img4 from '/public/img4.svg'
-import Img5 from '/public/img5.svg'
-import Img6 from '/public/img6.svg'
+import Img2 from '/img2.svg'
+import Img3 from '/img3.svg'
+import Img4 from '/img4.svg'
+import Img5 from '/img5.svg'
+import Img6 from '/img6.svg'
 
 
 const Skill = () => {

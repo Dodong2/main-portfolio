@@ -1,11 +1,19 @@
 /*---Hooks---*/
 import PropTypes from "prop-types";
 // install: npm install prop-types
+/*---Images---*/
+import Img13 from '/img13.svg'
+import Img14 from '/img14.svg'
+/*---Icons---*/
+import { IoClose } from "react-icons/io5";
 const Modal1 = ({ setModal1 }) => {
   return (
     <>
       <div className="modal-content1">
-        <button onClick={() => setModal1(false)}>Close</button>
+      <div className='modal1-header'>
+      <img src={Img13}/>
+      <button onClick={() => setModal1(false)}><IoClose/></button>
+      </div><br/>        
         <p>
           Greetings, My name is Carl Stephen Arocha. I`m currently studying
           second year of BSIT. As a web developer, I possess a beginner-level
@@ -13,9 +21,10 @@ const Modal1 = ({ setModal1 }) => {
           portfolio, I am open to collaborating on projects that align with my
           skill set. Please find my skills outlined below. Thank you for your
           consideration.
-
-          (bukas ulit)
         </p>
+        <div className='modal1-footer'>
+        <img src={Img14}/>
+        </div>
       </div>
     </>
   );
