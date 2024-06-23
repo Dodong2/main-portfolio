@@ -905,6 +905,42 @@ body.active-modal {
   color: var(--green);
 }
 
+/*--------------------(  Pulse  )--------------------*/
+
+
+.pulse-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pulse {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: var(--green-fade);
+  border-radius: 50%;
+}
+.pulse span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  border-radius:inherit;
+  opacity: .8;
+  animation: pulse 2s ease-out infinite;
+  animation-delay: calc(1s * var(--i));
+}
+
+@keyframes pulse {
+  100% {
+      opacity: 0;
+      transform: scale(2);
+  }
+}
+
+
 /*--------------------(  for Mobile  )--------------------*/
 @media only screen and (max-width: 767px) {
   .main-container {

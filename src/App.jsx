@@ -5,18 +5,25 @@ import { HashRouter as Router } from 'react-router-dom'
 const Home = lazy(() => import('./pages/Home.jsx'))
 const Project = lazy(() => import('./pages/Project.jsx'))
 const Skill = lazy(() => import('./pages/Skill.jsx'))
-const Contact = lazy (() => import('./pages/Contact.jsx'))
+const Contact = lazy(() => import('./pages/Contact.jsx'))
 
 function App() {
 
   return (
     <>
       <Router>
-        <Suspense fallback={<h1>Loading...</h1>}>
+        <Suspense fallback={
+          <div className='pulse-container'>
+          <div className="pulse">
+          <span style={{ '--i': 0 }}></span>
+          <span style={{ '--i': 1 }}></span>
+          <span style={{ '--i': 2 }}></span>
+          <span style={{ '--i': 3 }}></span>
+          </div></div>}>
           <Home />
           <Skill />
           <Project />
-          <Contact/>
+          <Contact />
         </Suspense>
       </Router>
     </>
