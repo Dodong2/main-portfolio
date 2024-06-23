@@ -773,6 +773,7 @@ body.active-modal {
 
   .mess {
     font-size: 0.6em;
+    white-space: nowrap;
   }
 
   .img-right .box2 {
