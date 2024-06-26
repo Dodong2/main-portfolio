@@ -6,7 +6,7 @@ import Cat from "/catfact.png";
 import Bao from "/bao.png";
 import Port from "/port design.png";
 import Weather from "/weather_app.png";
-import Budget from "/public/budget tracker.png";
+import Budget from "/budget tracker.png";
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -177,7 +177,7 @@ const Project = () => {
                 <img src={Budget} />
                 <div className="overlay">
                   <h1>Portfolio</h1>
-                  <Link to="https://www.figma.com/design/lNAdn7kkPjTt183B6Z0w08/Untitled?node-id=0-1&t=ObLTtcU521Xu3xWi-1">
+                  <Link to="https://budget-tracker-collab.vercel.app/">
                     <button className="overlay-button">view project</button>
                   </Link>
                 </div>
