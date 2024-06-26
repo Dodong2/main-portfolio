@@ -6,6 +6,7 @@ import Cat from "/catfact.png";
 import Bao from "/bao.png";
 import Port from "/port design.png";
 import Weather from "/weather_app.png";
+import Budget from "/public/budget tracker.png";
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -170,6 +171,29 @@ const Project = () => {
               </div>
             </div>
             <hr />
+            {/*----------PROJECT LAYER2----------*/}
+            <div className="project-layer2">
+              <div className="project-img">
+                <img src={Budget} />
+                <div className="overlay">
+                  <h1>Portfolio</h1>
+                  <Link to="https://www.figma.com/design/lNAdn7kkPjTt183B6Z0w08/Untitled?node-id=0-1&t=ObLTtcU521Xu3xWi-1">
+                    <button className="overlay-button">view project</button>
+                  </Link>
+                </div>
+              </div>
+              <div className="project-description2">
+                <span>2024</span>
+                <h1>Budget Tracker</h1>
+                <h2>Project Collaboration</h2>
+                <p>
+                  This is a collaborative project called the Budget Tracker. It
+                  is a simple website where anyone can record their expenses.
+                  This is a full-stack project in which I serve as the front-end
+                  developer, while my friend is the back-end developer.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
