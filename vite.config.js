@@ -20,7 +20,7 @@ export default defineConfig({
             type: 'image/svg+xml',
           },
           {
-            src: '/public', // Adjust the path to match the location of your PNG icons in the public folder
+            src: '/public/appcon.png', // Adjust the path to match the location of your PNG icons in the public folder
             sizes: '192x192',
             type: 'image/png',
           },
