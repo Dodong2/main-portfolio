@@ -16,7 +16,7 @@ export default defineConfig({
         icons: [
           {
             src: '/public/img1.svg', // Adjust the path to match the location of your SVG icons in the public folder
-            sizes: 'any',
+            sizes: '192x192',
             type: 'image/svg+xml',
           },
           {
