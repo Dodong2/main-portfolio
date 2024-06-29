@@ -45,7 +45,6 @@ const manifestForPlugin = {
       }
 
     ],
-    theme_color: '#181818',
     background_color: '#e0cc3b',
     display: 'standalone',
     scope: '/',
