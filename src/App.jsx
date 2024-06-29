@@ -8,6 +8,17 @@ const Skill = lazy(() => import('./pages/Skill.jsx'))
 const Contact = lazy(() => import('./pages/Contact.jsx'))
 
 function App() {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((registration) => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch((error) => {
+          console.error('ServiceWorker registration failed: ', error);
+        });
+    });
+  }
 
   return (
     <>
