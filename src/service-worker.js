@@ -1,7 +1,7 @@
 // Define cache names for different types of assets
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
-  '/dong.png',
+  '/',
   '/index.html', // Add other HTML files as needed
   '/app.js',     // Add your main JS bundle
   '/app.jsx',     // Add your main JS bundle
