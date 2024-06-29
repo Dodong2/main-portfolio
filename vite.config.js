@@ -6,10 +6,13 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'promt',
+      injectRegister: 'auto',
+      includeAssests:['favicon.ico', "apple-touc-icon.png", "masked-icon.svg"],
       workbox: {
         clientsClaim: true,
-        skipWaiting: true
+        skipWaiting: true,
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       },
       includeAssets: [
         'favicon.svg', 
@@ -166,6 +169,7 @@ export default defineConfig({
             purpose: 'any maskable',
           }
         ],
+        
       },
       srcDir: 'src', // Ensure this is the correct path
       filename: 'service-worker.js' // Ensure this matches the actual file name
