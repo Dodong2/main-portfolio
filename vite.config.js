@@ -33,9 +33,9 @@ const manifestForPlugin = {
   '/img14.svg',
   ],
   manifest: {
-    name: 'Castar App',
-    short_name: 'Castar Web App',
-    description: 'Castar App Portfolio',
+    name: 'React-vite-app',
+    short_name: 'react-vite-app',
+    description: 'I am a simple vite app',
     icons: [
       {
         src: 'img1.svg',
@@ -116,44 +116,45 @@ const manifestForPlugin = {
         src: 'bao.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       },
       {
         src: 'budget tracker.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       },{
         src: 'catfact.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       },{
         src: 'cert-AppCon.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       },{
         src: 'dong.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       },{
         src: 'php crud.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       },{
         src: 'port design.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       },{
         src: 'weather_app.png',
         sizes: '512x512',
         type: 'image/png',
-        
+        purpose: 'any maskable',
       }
+
     ],
     theme_color: '#181818',
     background_color: '#e0cc3b',
