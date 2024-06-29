@@ -15,23 +15,20 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: '/icons/pwa-icon.svg', // Adjust the path to match the location of your SVG icons in the public folder
+            sizes: 'any',
+            type: 'image/svg+xml',
+          },
+          {
+            src: '/icons/pwa-192x192.png', // Adjust the path to match the location of your PNG icons in the public folder
             sizes: '192x192',
             type: 'image/png',
           },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
+          // Add more icons if needed following the same structure
         ],
       },
+      srcDir: '/src',
+      filename: 'service-worker.jsx', // Specify the filename for your service worker
     }),
   ],
 });
