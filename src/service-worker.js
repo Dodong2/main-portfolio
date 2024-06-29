@@ -4,6 +4,7 @@ const urlsToCache = [
   '/',
   '/index.html', // Add other HTML files as needed
   '/app.js',     // Add your main JS bundle
+  '/app.jsx',     // Add your main JS bundle
   '/App.css', // Add your main CSS file
   '/favicon.ico',
   '/apple-touch-icon.png',
