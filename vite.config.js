@@ -15,12 +15,12 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/icons/pwa-icon.svg', // Adjust the path to match the location of your SVG icons in the public folder
+            src: '/public', // Adjust the path to match the location of your SVG icons in the public folder
             sizes: 'any',
             type: 'image/svg+xml',
           },
           {
-            src: '/icons/pwa-192x192.png', // Adjust the path to match the location of your PNG icons in the public folder
+            src: '/public', // Adjust the path to match the location of your PNG icons in the public folder
             sizes: '192x192',
             type: 'image/png',
           },
