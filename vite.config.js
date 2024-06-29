@@ -32,8 +32,6 @@ export default defineConfig({
           },
         ],
       },
-      srcDir: 'src',
-      filename: 'service-worker.js'
     }),
   ],
 });
