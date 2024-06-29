@@ -32,6 +32,9 @@ const urlsToCache = [
   '/img12.svg',
   '/img13.svg',
   '/img14.svg',
+  '/fonts/Poppins-Light.ttf',
+  '/fonts/Poppins-Bold.ttf',
+  '/fonts/Poppins-ExtraBold.ttf',
   // Add other assets you want to cache
 ];
 
