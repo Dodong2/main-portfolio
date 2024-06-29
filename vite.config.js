@@ -33,9 +33,9 @@ const manifestForPlugin = {
   '/img14.svg',
   ],
   manifest: {
-    name: 'React-vite-app',
-    short_name: 'react-vite-app',
-    description: 'I am a simple vite app',
+    name: 'Castar Web App',
+    short_name: 'Castar Web App',
+    description: 'Castar Portfolio App',
     icons: [
       {
         src: 'img1.svg',
