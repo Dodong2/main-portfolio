@@ -15,7 +15,7 @@ const manifestForPlugin = {
     description: 'I am a simple vite app',
     icons: [
       {
-        src: '/android-chrome-192x192.png',
+        src: '/public/android-chrome-192x192.png',
         sizes: '192x192',
         type: 'image/png',
         purpose: 'favicon',
