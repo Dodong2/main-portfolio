@@ -15,7 +15,7 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/public', // Adjust the path to match the location of your SVG icons in the public folder
+            src: '/public/img1.svg', // Adjust the path to match the location of your SVG icons in the public folder
             sizes: 'any',
             type: 'image/svg+xml',
           },
