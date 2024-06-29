@@ -7,19 +7,46 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        clientsClaim: true,
+        skipWaiting: true
+      },
       includeAssets: [
         'favicon.svg', 
         'favicon.ico', 
         'robots.txt', 
         'apple-touch-icon.png',
         'icons/*.png', // Include all PNG files in the icons directory
-        'icons/*.svg'  // Include all SVG files in the icons directory
+        'icons/*.svg',  // Include all SVG files in the icons directory
+        'appcon.png',
+          'bao.png',
+          'budget tracker.png',
+          'catfact.png',
+          'cert-AppCon.png',
+          'dong.png',
+          'php crud.png',
+          'port design.png',
+          'weather_app.png',
+          'img1.svg',
+          'img2.svg',
+          'img3.svg',
+          'img4.svg',
+          'img5.svg',
+          'img6.svg',
+          'img7.svg',
+          'img8.svg',
+          'img9.svg',
+          'img10.svg',
+          'img11.svg',
+          'img12.svg',
+          'img13.svg',
+          'img14.svg',
       ],
       manifest: {
         name: 'Castar Portfolio App',
-        short_name: 'MyApp',
-        description: 'My Awesome App description',
-        theme_color: '#ffffff',
+        short_name: 'Castar App',
+        description: 'Castar App',
+        theme_color: '#141e27',
         icons: [
           {
             src: 'img1.svg',
