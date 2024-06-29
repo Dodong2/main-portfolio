@@ -7,7 +7,14 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: [
+        'favicon.svg', 
+        'favicon.ico', 
+        'robots.txt', 
+        'apple-touch-icon.png',
+        'icons/*.png', // Include all PNG files in the icons directory
+        'icons/*.svg'  // Include all SVG files in the icons directory
+      ],
       manifest: {
         name: 'My Awesome App',
         short_name: 'MyApp',
@@ -15,20 +22,25 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/public/img1.svg', // Adjust the path to match the location of your SVG icons in the public folder
-            sizes: '192x192',
+            src: 'icons/pwa-icon.svg',
+            sizes: 'any',
             type: 'image/svg+xml',
           },
           {
-            src: '/public/appcon.png', // Adjust the path to match the location of your PNG icons in the public folder
+            src: 'icons/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
-          // Add more icons if needed following the same structure
+          {
+            src: 'icons/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          }
         ],
       },
-      srcDir: '/src',
-      filename: 'service-worker.jsx', // Specify the filename for your service worker
+      srcDir: 'src', // Ensure this is the correct path
+      filename: 'service-worker.js' // Ensure this matches the actual file name
     }),
   ],
 });
