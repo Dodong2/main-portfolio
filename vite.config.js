@@ -31,9 +31,6 @@ const manifestForPlugin = {
   '/img12.svg',
   '/img13.svg',
   '/img14.svg',
-  '/fonts/Poppins-Light.ttf',
-  '/fonts/Poppins-Bold.ttf',
-  '/fonts/Poppins-ExtraBold.ttf',
   ],
   manifest: {
     name: 'Castar Web App',
