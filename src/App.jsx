@@ -10,7 +10,7 @@ const Contact = lazy(() => import('./pages/Contact.jsx'))
 function App() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
+      navigator.serviceWorker.register('/src/service-worker.js')
         .then((registration) => {
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
         })
